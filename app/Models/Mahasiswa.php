@@ -1,3 +1,4 @@
+<?php
 
 namespace App\Models;
 
@@ -8,7 +9,14 @@ class Mahasiswa extends Model
 {
     use HasFactory;
 
-    protected $table = 'mahasiswa';
+    
+    protected $table = 'mahasiswa'; 
 
-    protected $fillable = ['nama', 'email', 'telepon', 'alamat'];
+   
+    protected $fillable = [
+        'nama', 
+        'email', 
+        'nim', 
+        'jurusan'
+    ];
 }

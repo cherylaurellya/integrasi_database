@@ -30,13 +30,13 @@
         </div>
 
         <div class="mb-4">
-            <label class="block">Nomor Telepon:</label>
-            <input type="text" name="telepon" class="border rounded w-full p-2" value="{{ old('telepon') }}">
+            <label class="block">Nim:</label>
+            <input type="text" name="nim" class="border rounded w-full p-2" value="{{ old('nim') }}">
         </div>
 
         <div class="mb-4">
-            <label class="block">Alamat:</label>
-            <textarea name="alamat" class="border rounded w-full p-2">{{ old('alamat') }}</textarea>
+            <label class="block">Jurusan:</label>
+            <textarea name="jurusan" class="border rounded w-full p-2">{{ old('jurusan') }}</textarea>
         </div>
 
         <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">

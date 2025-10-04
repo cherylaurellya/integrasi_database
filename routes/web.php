@@ -1,33 +1,26 @@
 <?php
 
-//use Illuminate\Support\Facades\Route;
-use Illuminate\support\facades\DB;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Request;
 use App\Http\Controllers\MahasiswaController;
 
-// Route::resource('mahasiswa', MahasiswaController::class);
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
-// // Insert data mahasiswa
-// Route::get('/insert', function () {
-//     DB::table('mahasiswa')->insert([
-//         'nama' => 'Cheryl Aurellya',
-//         'nim' => '11223344',
-//         'jurusan' => 'Teknik Komputer',
-//         'created_at' => now(),
-//         'updated_at' => now(),
-//     ]);
+// 1. Menampilkan Daftar Mahasiswa (INDEX/getData)
+Route::get('/mahasiswa', [MahasiswaController::class, 'getData'])->name('mahasiswa.index');
 
-//     return "Data berhasil ditambahkan!";
-// });
 
-// // Ambil semua data mahasiswa
-// Route::get('/mahasiswa', function () {
-//     $mahasiswa = DB::table('mahasiswa')->get();
-//     return response()->json($mahasiswa);
-// });
+// 2. Menampilkan Form Tambah Mahasiswa (CREATE)
+Route::get('/mahasiswa/create', [MahasiswaController::class, 'create'])->name('mahasiswa.create');
 
-Route::get('/insert', [MahasiswaController::class, 'insertData']);
-Route::get('/mahasiswa', [MahasiswaController::class, 'getData']);
+
+// 3. Menyimpan Data Mahasiswa (STORE)
+
+Route::post('/mahasiswa', [MahasiswaController::class, 'store'])->name('mahasiswa.store');
+
+
+
+
+
+

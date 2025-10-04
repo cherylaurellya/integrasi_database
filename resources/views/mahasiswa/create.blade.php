@@ -17,13 +17,13 @@
         </div>
 
         <div class="mb-4">
-            <label>Telepon</label>
-            <input type="text" name="telepon" class="border rounded w-full p-2">
+            <label>Nim</label>
+            <input type="text" name="nim" class="border rounded w-full p-2">
         </div>
 
         <div class="mb-4">
-            <label>Alamat</label>
-            <textarea name="alamat" class="border rounded w-full p-2"></textarea>
+            <label>Jurusan</label>
+            <textarea name="Jurusan" class="border rounded w-full p-2"></textarea>
         </div>
 
         <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Simpan</button>
